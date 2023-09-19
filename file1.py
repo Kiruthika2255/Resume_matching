@@ -1,5 +1,6 @@
 import transformers
 import torch
+from sklearn.metrics.pairwise import cosine_similarity
 
 tokenizer = transformers.DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
 model = transformers.DistilBertModel.from_pretrained('distilbert-base-uncased')
